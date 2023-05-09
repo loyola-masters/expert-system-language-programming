@@ -20,7 +20,8 @@ Then, just clone this repo and you're good to go!
 Start a Prolog console loaded with `main.pl`:
 
 ```bash
-swi-prolog -f main.pl
+swipL -f main.pl
+?- main
 ```
 
 Then follow the on-screen instructions. Enjoy!
