@@ -1,8 +1,15 @@
 % Assigns an answer to questions from the knowledge base
+% question/1
+% checks if there is already progress (i.e., an answer has been given)
+% for the question 'why', and if so, it assigns the value of the answer to the variable Answer.
+% This ensures that the system will not repeat the same question if it has already been answered.
 why(Answer) :-
   progress(why, Answer).
+% answer/1
 why(Answer) :-
+  % if 'why' question has not been formulated...
   \+ progress(why, _),
+  % ... ask it
   ask(why, Answer, [for_my_kids, i_dont_know, make_money, just_for_fun, im_interested, improve_myself]).
 
 which_platform(Answer) :-

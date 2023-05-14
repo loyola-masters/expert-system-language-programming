@@ -1,5 +1,7 @@
 % Questions for the knowledge base
+% question/1
 question(why) :-
+  % / write/1, nl/0
   write('Why do you want to learn programming?'), nl.
 
 question(which_platform) :-

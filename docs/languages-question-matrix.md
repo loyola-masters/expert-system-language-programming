@@ -21,5 +21,5 @@ want_to_work_for        [startup, corporate]
 think_about_microsoft   [im_a_fan, not_bad, suck]
 try_something_new       [yes, no]
 favourite_toy           [lego, play_doh, old_ugly]
-prefer_to_learn, Answer [easy_way, best_way, harder_way, hardest_way]
-car                     [auto, manual])
+prefer_to_learn         [easy_way, best_way, harder_way, hardest_way]
+car                     [auto, manual]
