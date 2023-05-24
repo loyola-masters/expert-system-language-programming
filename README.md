@@ -25,3 +25,18 @@ swipL -f main.pl
 ```
 
 Then follow the on-screen instructions. Enjoy!
+
+
+# Recommender of course of programming languages
+Functors equivalence:
+
+| WPLL           | Advisor           |
+| -------------- | ----------------- |
+| language       | course            |
+| find_language  | find_course       |
+| describe       | course_description|
+| question       | =                 |
+| answer         | =                 |
+| answers        | =                 |
+| parse          | =                 |
+| ask            | =                 |
