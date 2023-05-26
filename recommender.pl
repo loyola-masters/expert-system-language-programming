@@ -17,34 +17,21 @@ main :-
   find_course(Course) :-
     course(Course).
 
-  % 1. For the Coursera MOOC dataset:
-  %    a. Add language column
-  %    b. Tag course difficulty: begginer, intermediate, expert
-  % 
-  % 2. Create knowledge base of courses (use ChatGPT), because there are many rules:
-  course_description(python1) :-
-    syllabus(...),
-    ...
-  course_description(python2) :-
-    syllabus(...),
-    ...
-  course_description(python3) :-
-    syllabus(...),
-    ...
-
-  course(python1) :-
-    language(python),
-    level(begginer).
-
-  course(python2) :-
-    language(python),
-    level(intermediate).
-
-  course(python3) :-
-    language(python),
-    level(advanced).
+  % 1. For the Coursera MOOC dataset, create a knowledge base of the offer of courses
+  % 2. Add to each row the programming language the course is about
+  course_description(Language) :-
+    language(Language),
+    name(...),
+    university(...),
+    difficultyLevel(...),
+    courseRating(...),
+    course_description(...),
+    skills(..).
 
   % 3. Prepare questions for user level evaluation
-  %.    - questions, answers, assign  
-  %   Questions:  What level do you have?
-  %   Answers:    level-begginer/interm/advanced
+  %    - questions, answers, assign  
+  %   Questions: 
+  %           1. What level do you have?
+  %           2. What University do you prefer?
+  %           3. Minimum course rating
+  %           4. What skills?
